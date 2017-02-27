@@ -1,0 +1,38 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 17,
+    "editor.fontFamily": "'Ubuntu Mono', monospace, 'Droid Sans Fallback'",
+    "editor.tabSize": 4,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.fontSize": 17,
+    "telemetry.enableTelemetry": false,
+
+    // Linux Python Settings
+    // apt install: pydocstyle
+    "python.linting.pydocstyleEnabled": true,
+
+    "markdown.preview.fontFamily": "'Ubuntu', 'Segoe UI', 'SFUIText-Light', 'HelveticaNeue-Light', sans-serif",
+    "markdown.preview.fontSize": 17,
+
+    // Sync Gist
+    //"sync.gist": "",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.gist": "",
+    "sync.lastUpload": "",
+    "sync.lastDownload": "",
+    "sync.version": 251,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false
+}
