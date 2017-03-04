@@ -6,12 +6,17 @@
     },
     {
         "key": "ctrl+shift+down",
-        "command": "editor.action.copyLinesDownAction",
+        "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+shift+up",
-        "command": "editor.action.copyLinesUpAction",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     { "key": "alt+1", "command": "workbench.action.splitEditor" },
