@@ -33,10 +33,12 @@ These are pretty simple, not a lot is needed.
 | ctrl + shift + x | (default) Display Extensions Sidebar |
 | **UI Main Area** |  |
 | ctrl + p | (default) Fuzzy File Open (Like Sublime) |
+| f1 |  |
 | cltr + p + `<cmd>` | (default) Run command/install/etc, eg: `ext install python` |
-| ctrl + shift + p | (default) Command Palett, All Editor Commands (Like Sublime) |
+| ctrl + shift + p | (default) Command Palette, All Editor Commands (Like Sublime) |
 | ctrl + ~ | (default) Open Terminal |
 | ctrl + shift + ~ | (default) Open Terminal More Terminals (Drop down list on Right) |
+| f11 | (default) Full Screen Mode |
 | **Editing** |  |
 | ctrl + d | Duplicate Line (below) |
 | ctrl + e | Delete Current Line |
@@ -51,8 +53,12 @@ These are pretty simple, not a lot is needed.
 | ctrl + shift + ] | (default) Unfold Code Block |
 | alt + e | (extension: Alignment) Align highlighted code |
 | **Search** |  |
+| ctrl + f | (default) Search in file |
+| f3 | (default) With the above search in file open, f3 goes to the next find |
+| shift + f3 | (default) With the above search in file open, shift+f3 goes to the prev find |
 | ctrl + shift + f | (default) Search Across Project (RegEx allowed) |
 | ctrl + shift + j | (default) Same as above with more options |
+
 | **Code Selection** |  |
 | ctrl + shift + L | (default) Select all that match highlighted code |
 | shift + alt + up/down | (default) Multi-Cursor up/down lines |
@@ -79,8 +85,16 @@ I list my extensions in the `extensions.txt` file. To install one by one press `
 
 Search for *annsk.alignment* will exact match, and *alignment* will match + similar.
 
+| Plugin | Shortcut | Action |
+| ---- | ---- |
+|  alefragnani.project-manager | F1 > type "project manager" | Lists Menu |
+|                              | ctrl + alt + p | Opens Project List |
+
 ## Sharing your Extensions
-Create a Free Account at [Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services) and follow the instructions.
+
+Run `$ code --list-extensions > extensions.txt` to save to a file like I did.
+
+Otherwise, create a Free Account at [Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services) and follow the instructions.
 
 ---
 License: MIT *(Open Source)*

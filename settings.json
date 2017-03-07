@@ -1,5 +1,15 @@
-// Place your settings in this file to overwrite the default settings
+// --------------------------------------------------
+// Custom Settings
+//      @built-in
+//      @extensions
+// --------------------------------------------------
 {
+    // --------------------------------------------------
+    //
+    // @built-in: Editor
+    //
+    // --------------------------------------------------
+    "window.zoomLevel": 1,
     "editor.fontSize": 17,
     "editor.fontFamily": "'Ubuntu Mono', monospace, 'Droid Sans Fallback'",
     "editor.tabSize": 4,
@@ -7,32 +17,77 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/.pyc"
     },
     "search.exclude": {
         "**/node_modules": true,
-        "**/bower_components": true
+        "**/bower_components": true,
+        "**/.pyc"
     },
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "terminal.integrated.fontSize": 17,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderIndentGuides": true,
+    "editor.cursorBlinking": "phase",
+    "editor.lineNumbers": "on",
+    "editor.rulers": [120],
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 75,
     "telemetry.enableTelemetry": false,
 
-    // Linux Python Settings
-    // apt install: pydocstyle
-    "python.linting.pydocstyleEnabled": true,
 
+    // --------------------------------------------------
+    // @built-in:  Workbench
+    // --------------------------------------------------
+    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.menuBarVisibility": "default",
+
+    // --------------------------------------------------
+    //
+    // @built-in:  PHP
+    //
+    // --------------------------------------------------
+    // Find PHP Path in Terminal: $ which php
+    "php.validate.executablePath": "/usr/bin/php",
+
+    // --------------------------------------------------
+    // @built-in:  Terminal
+    // --------------------------------------------------
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.rightClickCopyPaste": false,
+
+    // Terminal font defaults to Editor font unless changed
+    "terminal.integrated.fontFamily": "",
+    "terminal.integrated.fontSize": 17,
+
+
+    // --------------------------------------------------
+    //
+    //  @extensions
+    //
+    // --------------------------------------------------
+    //  Auto-Open Markdown Preview: hnw.vscode-auto-open-markdown-preview
+    // --------------------------------------------------
     "markdown.preview.fontFamily": "'Ubuntu', 'Segoe UI', 'SFUIText-Light', 'HelveticaNeue-Light', sans-serif",
     "markdown.preview.fontSize": 17,
 
-    // Sync Gist
-    //"sync.gist": "",
-    "sync.autoDownload": true,
-    "sync.autoUpload": true,
-    "sync.gist": "",
-    "sync.lastUpload": "",
-    "sync.lastDownload": "",
-    "sync.version": 251,
-    "sync.showSummary": true,
-    "sync.forceDownload": false,
-    "sync.anonymousGist": false
+    // --------------------------------------------------
+    //  Python: donjayamanne.python
+    // --------------------------------------------------
+    // $apt install pydocstyle
+    "python.linting.pydocstyleEnabled": true,
+
+
+    // --------------------------------------------------
+    //  PHPUnit: emallin.phpunit
+    // --------------------------------------------------
+    {
+        // $ which phpunit
+        "phpunit.execPath": "/home/jesse/.composer/vendor/bin/phpunit",
+        "phpunit.args": [
+            "--configuration", "./phpunit.xml.dist"
+        ]
+    }
 }
