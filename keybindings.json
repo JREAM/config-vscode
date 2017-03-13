@@ -19,6 +19,12 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-    { "key": "alt+1", "command": "workbench.action.splitEditor" },
+    { "key": "alt+;", "command": "workbench.action.focusPreviousGroup" },
+    { "key": "alt+'", "command": "workbench.action.splitEditor" },
     { "key": "ctrl+r", "command": "workbench.action.gotoSymbol" },
+    {
+        "key": "alt+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
 ]
