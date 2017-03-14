@@ -1,30 +1,47 @@
 // Place your key bindings in this file to overwrite the defaults
-[{
+[
+    // --------------------------------------------------------------------
+    // DELETE LINE
+    // --------------------------------------------------------------------
+    {
         "key": "ctrl+e",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // --------------------------------------------------------------------
+    // MOVE DOWN
+    // --------------------------------------------------------------------
     {
         "key": "ctrl+shift+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // --------------------------------------------------------------------
+    // MOVE LINE UP
+    // --------------------------------------------------------------------
     {
         "key": "ctrl+shift+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
+    // --------------------------------------------------------------------
+    // DUPLICATE LINE
+    // --------------------------------------------------------------------
     {
         "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-    { "key": "alt+;", "command": "workbench.action.focusPreviousGroup" },
-    { "key": "alt+'", "command": "workbench.action.splitEditor" },
+    // --------------------------------------------------------------------
+    // GO TO SYMBOL PANEL
+    // --------------------------------------------------------------------
     { "key": "ctrl+r", "command": "workbench.action.gotoSymbol" },
+    // --------------------------------------------------------------------
+    // EDIT ALL HIGHLIGHTED
+    // --------------------------------------------------------------------
     {
         "key": "alt+d",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
-    },
+    }
 ]
