@@ -71,6 +71,8 @@ Anything with (default) are the default settings of the editor.
 | `ctrl + shift + ]` | (default) Unfold Code Block |
 | `alt + s` | Edit all items of current highlight (default `ctrl+d`) |
 | `alt + e` | (extension: Alignment) Align highlighted code |
+| `ctrl + k + l ` | LowerCase Selection (Like ST3)
+| `ctrl + k + u ` | UpperCase Selection (Like ST3)
 
 ## Code Selections
 | Key | Action |
@@ -97,11 +99,24 @@ Anything with (default) are the default settings of the editor.
 | `ctrl + 3` | (default) Focus Right Editor Group |
 | `ctrl + tab` | (default) Cycle through Tabs |
 | `ctrl + shift + tab` | (default) Cycle through Tabs reverse |
-| `alt + 1` *[2, 3 ..]* | (default) Open Tab at index 1, 2, 3 ... |
-| `alt + 2` | (default) Focus on Previous Editor Group (Cycles) |
+| `alt + 1 [..2, 3]` | (default) Open Tab at index 1, 2, 3 .. |
 | `alt + '` | Create Split Editor |
 | `alt + shift + 1` | (default) Toggle Split Windows Horizontal/Vertical |
 | `ctrl + w` | Close Tab |
+
+## Terminal
+| Key | Action |
+| ---- | ---- |
+| `ctrl+~` | (default) Open Terminal
+| `ctrl+shift+~` | (default) Open New Terminal Tab
+| `alt+left` | Navigate Terminal tab left (only when terminalFocused)
+| `alt+right` | Navigate Terminal tab left (only when terminalFocused)
+| `alt+1` | Navigate Terminal tab 1 (only when terminalFocused)
+| `alt+2` | Navigate Terminal tab 2 (only when terminalFocused)
+| `alt+3` | Navigate Terminal tab 3 (only when terminalFocused)
+| `alt+4` | Navigate Terminal tab 4 (only when terminalFocused)
+| `alt+x` | Close/Kill current terminal tab (only when terminalFocused)
+
 
 ## Debugging
 | Key | Action |
@@ -111,8 +126,8 @@ Anything with (default) are the default settings of the editor.
 ## Misc
 | Key | Action |
 | ---- | ---- |
->>>>>>> fa7b36577aa25a57feadc207a879cf5c935d2304
 | ` $ code --list-extensions` | List All Install Extensions (Location:  ~/.vscode/extensions) |
+| ` $ code --install-extension <ext></ext>` | Install Extension (Location:  ~/.vscode/extensions) |
 
 # Extensions
 I have listed my extensions in the `extensions.txt` file. To install one by one press `ctrl+shift+x` or click the `Extension Panel Icon`. When searching you can disregard the first name in the list if you want additional similar options, for example:

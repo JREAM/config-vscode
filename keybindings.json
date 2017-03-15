@@ -8,7 +8,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     // --------------------------------------------------------------------
-    // MOVE DOWN
+    // MOVE LINE DOWN
     // --------------------------------------------------------------------
     {
         "key": "ctrl+shift+down",
@@ -43,6 +43,27 @@
         "key": "ctrl+k ctrl+u",
         "command": "editor. .transformToUppercase",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    // --------------------------------------------------------------------
+    // Terminal Settings
+    // --------------------------------------------------------------------
+    //
+    // {"key": "alt+left","command": "workbench.action.terminal.focus", "when": "editorFocus"},
+    //
+    // (default) New Terminal Tab: Ctrl + Shift + `
+    // Tab through terminals
+    {"key": "alt+left","command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus"},
+    {"key": "alt+right", "command": "workbench.action.terminal.focusNext","when": "terminalFocus"},
+    // Jump to terminal tab 1, 2, 3, 4
+    {"key": "alt+1", "command": "workbench.action.terminal.focusAtIndex2", "when": "terminalFocus"},
+    {"key": "alt+2", "command": "workbench.action.terminal.focusAtIndex2", "when": "terminalFocus"},
+    {"key": "alt+3", "command": "workbench.action.terminal.focusAtIndex3", "when": "terminalFocus"},
+    {"key": "alt+4", "command": "workbench.action.terminal.focusAtIndex4", "when": "terminalFocus"},
+    {
+        // Closes a Terminal
+        "key": "alt+x",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
     },
     // --------------------------------------------------------------------
     // GO TO SYMBOL PANEL
