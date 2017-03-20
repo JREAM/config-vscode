@@ -32,6 +32,13 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     // --------------------------------------------------------------------
+    // Toggle Sidebar like ST3
+    // --------------------------------------------------------------------
+    {
+        "key": "ctrl+k ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // --------------------------------------------------------------------
     // Transform to to Uppercase/Lowercase like ST3
     // --------------------------------------------------------------------
     {
