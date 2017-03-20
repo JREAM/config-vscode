@@ -73,9 +73,9 @@
     // EDIT ALL HIGHLIGHTED
     // --------------------------------------------------------------------
     {
-        "key": "alt+d",
+        "key": "ctrl+.",
         "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "when": "editorFocus && !editorReadonly"
     },
     // --------------------------------------------------------------------
     // PLUGIN: BREAK FROM COMMA (Split long Comma list into rows)
