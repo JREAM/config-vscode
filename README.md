@@ -38,6 +38,7 @@ Anything with (default) are the default settings of the editor.
 | Key | Action |
 | ---- | ---- |
 | `ctrl + b` | (default) Toggle Sidebar Visibility |
+| `ctrl+k ctrl+b` | (alternative) Toggle Sidebar Visibility (Like Sublime)
 | `ctrl + shift + e` | (default) Display Explorer Sidebar |
 | `ctrl + shift + f` | (default) Display Search Sidebar |
 | `ctrl + shift + d` | (default) Display Debug Sidebar |
@@ -69,8 +70,8 @@ Anything with (default) are the default settings of the editor.
 | `ctrl + shift + [` | (default) Fold Code Block |
 | `ctrl + shift + ]` | (default) Unfold Code Block |
 | `ctrl + shift + ]` | (default) Unfold Code Block |
-| `alt + s` | Edit all items of current highlight (default `ctrl+d`) |
-| `alt + e` | (extension: Alignment) Align highlighted code |
+| `ctrl + ,` | Edit all items of current highlight (default `ctrl+d` but used for line duplicate) |
+| `ctrl + =` | (extension: Alignment) Align highlighted code |
 | `ctrl + k + l ` | LowerCase Selection (Like ST3)
 | `ctrl + k + u ` | UpperCase Selection (Like ST3)
 
