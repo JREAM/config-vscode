@@ -63,7 +63,7 @@ Anything with (default) are the default settings of the editor.
 | `ctrl + e` | Delete Current Line |
 | `ctrl + shift + up` | Move line up |
 | `ctrl + shift + down` | Move line down |
-| `ctrl + r` | (default) Code Definition List (Like Sublime) |
+| `ctrl + r` | (default) Code Definition List (Like Sublime), Type `@:` to sort items! |
 | `ctrl + g` | (default) Go to specific line |
 | `ctrl + shift + o` | (default) Go to a a specific symbol in a file |
 | `ctrl + shift + [` | (default) Fold Code Block |
@@ -104,6 +104,8 @@ Anything with (default) are the default settings of the editor.
 | `alt + '` | Create Split Editor |
 | `alt + shift + 1` | (default) Toggle Split Windows Horizontal/Vertical |
 | `ctrl + w` | Close Tab |
+| `alt+left` | Move Focus Left a Group (With Split Windows) |
+| `alt+right` | Move Focus Right a Group (With Split Windows) |
 
 ## Terminal
 | Key | Action |
