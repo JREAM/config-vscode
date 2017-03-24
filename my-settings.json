@@ -67,6 +67,12 @@
     //
     //  @extensions
     //
+    // --------------------------------------------------------------------
+    // PLUGIN: Bookmarks
+    // --------------------------------------------------------------------
+    "bookmarks.useStickyBookmarks": true,
+    "bookmarks.saveBookmarksBetweenSessions": true,
+
     // --------------------------------------------------
     //  Auto-Open Markdown Preview: hnw.vscode-auto-open-markdown-preview
     // --------------------------------------------------
@@ -76,7 +82,7 @@
     // --------------------------------------------------
     //  Python: donjayamanne.python
     // --------------------------------------------------
-    // $apt install pydocstyle
+    // $ apt install pydocstyle
     "python.linting.pydocstyleEnabled": true,
 
 
