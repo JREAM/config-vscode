@@ -52,6 +52,11 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     // --------------------------------------------------------------------
+    // MOVE GROUPS LEFT/RIGHT (SPLIT WINDOWS)
+    // --------------------------------------------------------------------
+    { "key": "alt+right",     "command": "workbench.action.focusNextGroup" },
+    { "key": "alt+left",      "command": "workbench.action.focusPreviousGroup" },
+    // --------------------------------------------------------------------
     // Terminal Settings
     // --------------------------------------------------------------------
     //
@@ -73,7 +78,7 @@
         "when": "terminalFocus"
     },
     // --------------------------------------------------------------------
-    // GO TO SYMBOL PANEL
+    // GO TO SYMBOL PANEL (Like Sublime), Do: @:  to categorize
     // --------------------------------------------------------------------
     { "key": "ctrl+r", "command": "workbench.action.gotoSymbol" },
     // --------------------------------------------------------------------
