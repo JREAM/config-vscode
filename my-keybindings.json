@@ -85,7 +85,7 @@
     // EDIT ALL HIGHLIGHTED
     // --------------------------------------------------------------------
     {
-        "key": "ctrl+.",
+        "key": "ctrl+enter",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus && !editorReadonly"
     },
