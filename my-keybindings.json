@@ -32,6 +32,17 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     // --------------------------------------------------------------------
+    // EASY START/END OF LINE LAPTOP (AND HIGLIGHTING) - HOME/END REMAIN SAME
+    // --------------------------------------------------------------------
+    { "key": "alt+right",           "command": "cursorEnd",
+                                    "when": "editorTextFocus" },
+    { "key": "alt+shift+right",     "command": "cursorEndSelect",
+                                    "when": "editorTextFocus" },
+    { "key": "alt+left",            "command": "cursorHome",
+                                    "when": "editorTextFocus" },
+    { "key": "alt+shift+left",      "command": "cursorHomeSelect",
+                                    "when": "editorTextFocus" },
+    // --------------------------------------------------------------------
     // Toggle Sidebar like ST3
     // --------------------------------------------------------------------
     {
