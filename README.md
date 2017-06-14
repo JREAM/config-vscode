@@ -5,6 +5,11 @@ These are my Visual Studio Code Settings, Keybindings, and Plugin List.
 
 - [VSCode Settings](#vscode-settings)
 - [Definitions](#definitions)
+- [Extensions](#extensions)
+    - [Import/Export VSCode Extensions](#importexport-vscode-extensions)
+        - [Create List](#create-list)
+        - [Install](#install)
+        - [Alternative](#alternative)
 - [Keyboard Hotkeys](#keyboard-hotkeys)
     - [UI Side Panel](#ui-side-panel)
     - [UI Main Area](#ui-main-area)
@@ -12,10 +17,9 @@ These are my Visual Studio Code Settings, Keybindings, and Plugin List.
     - [Code Selections](#code-selections)
     - [Searching](#searching)
     - [Workspaces](#workspaces)
+    - [Terminal](#terminal)
     - [Debugging](#debugging)
     - [Misc](#misc)
-- [Extensions](#extensions)
-    - [Sharing your Extensions](#sharing-your-extensions)
 
 <!-- /TOC -->
 
@@ -29,6 +33,42 @@ These are my Visual Studio Code Settings, Keybindings, and Plugin List.
     - **Editor Tabs**: Multiple files opened in an editor with file tabs at the top (`ctrl + tab`) to move.
     - **Editor Split**: Displays more than one editors side by side with their own tabs. (`ctrl+\` default to split, my hotkey is `alt+1` to add)
         - Limit: 3 Editors (Left, Center, Right)
+
+
+# Extensions
+I have listed my extensions in the `extensions.txt` file. To install one by one press `ctrl+shift+x` or click the `Extension Panel Icon`. When searching you can disregard the first name in the list if you want additional similar options, for example:
+
+Search for *annsk.alignment* will exact match, and *alignment* will match + similar.
+
+| Plugin | Shortcut | Action |
+| ---- | ---- | -- |
+|  alefragnani.project-manager | `F1` > `project manager` | Lists Menu |
+|                              | `ctrl + alt + p` | Opens Project List |
+
+## Import/Export VSCode Extensions
+
+One Liner VSCode Extension Import and Exporting. On windows use a MySysGit, Cmder, or something with bash.
+
+### Create List
+```sh
+# Multi Liner (Installs with loop, I use this)
+code --list-extensions > extensions.txt
+
+# One liner
+code --list-extensions | xargs echo -n > extensions.txt
+```
+
+### Install
+
+Multi-line file install
+
+```sh
+while read e; do code --install-extension $e; done < extensions.txt
+```
+
+### Alternative
+Otherwise, create a Free Account at [Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services) and follow the instructions.
+
 
 # Keyboard Hotkeys
 These are pretty simple, not a lot is needed.
@@ -132,23 +172,7 @@ Anything with (default) are the default settings of the editor.
 | ` $ code --list-extensions` | List All Install Extensions (Location:  ~/.vscode/extensions) |
 | ` $ code --install-extension <ext></ext>` | Install Extension (Location:  ~/.vscode/extensions) |
 
-# Extensions
-I have listed my extensions in the `extensions.txt` file. To install one by one press `ctrl+shift+x` or click the `Extension Panel Icon`. When searching you can disregard the first name in the list if you want additional similar options, for example:
-
-Search for *annsk.alignment* will exact match, and *alignment* will match + similar.
-
-| Plugin | Shortcut | Action |
-| ---- | ---- | -- |
-|  alefragnani.project-manager | `F1` > `project manager` | Lists Menu |
-|                              | `ctrl + alt + p` | Opens Project List |
-
-## Sharing your Extensions
-
-Run `$ code --list-extensions > extensions.txt` to save to a file like I did.
-
-Otherwise, create a Free Account at [Visual Studio Team Services](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services) and follow the instructions.
-
 ---
 License: MIT *(Open Source)*
 
-&copy;2017 Jesse Boyer / [JREAM](http://jream.com)
+&copy;2017 Jesse Boyer / <[JREAM](http://jream.com)>
