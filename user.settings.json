@@ -1,0 +1,423 @@
+{
+  "[css]": {
+    "editor.formatOnType": true
+  },
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true
+  },
+  "[php]": {
+    "editor.formatOnType": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+  "bracketPairColorizer.independentPairColors": [
+    [
+      "()",
+      [
+        "#d65ba2",
+        "#3688f9",
+        "#834E94"
+      ],
+      "Red"
+    ],
+    [
+      "[]",
+      [
+        "#d65ba2",
+        "#3688f9",
+        "#834E94"
+      ],
+      "Red"
+    ],
+    [
+      "{}",
+      [
+        "#d65ba2",
+        "#3688f9",
+        "#834E94"
+      ],
+      "Red"
+    ]
+  ],
+  "breadcrumbs.enabled": true,
+  "composer.executablePath": "/usr/local/bin/composer",
+  "css.trace.server": "messages",
+  "debug.toolBarLocation": "docked",
+  "divider.endColumn": 80,
+  "divider.lines": 3,
+  "divider.text": "-",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorWidth": 3,
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "'Envy Code R', 'Fira Code Retina', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.insertSpaces": true,
+  "editor.lineHeight": 26,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 70,
+  "editor.minimap.renderCharacters": false,
+  "editor.quickSuggestions": {
+    "comments": true,
+    "strings": true
+  },
+  "editor.renderIndentGuides": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    120
+  ],
+  "editor.scrollBeyondLastColumn": 3,
+  "editor.scrollBeyondLastLine": false,
+  "editor.smoothScrolling": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "punctuation.terminator",
+        "settings": {
+          "foreground": "#B4B4B4"
+        }
+      },
+      {
+        "scope": [
+          "storage.modifier",
+          "storage.type",
+          "punctuation.definition.comment",
+          "comment.block.documentation",
+          "meta.toc-list",
+          "comment.line",
+          "comment.block",
+          "constant.language"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.wordWrapColumn": 120,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "xml": {
+      "attr_quotes": "single"
+    }
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "eslint.options": {},
+  "eslint.run": "onSave",
+  "eslint.trace.server": "off",
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "eslint.workingDirectories": [
+    "!dist/",
+    "!build/",
+    "!public/"
+  ],
+  "explorer.openEditors.visible": 0,
+  "files.associations": {
+    "*.handlebars": "liquid",
+    "*.hbs": "liquid",
+    "*.jsx": "javascriptreact",
+    "*.twig": "html"
+  },
+  "files.defaultLanguage": "",
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.pyc": false,
+    "**/.svn": false,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/vendor/**": true
+  },
+  "fixJson.indentationSpaces": 2,
+  "formattingToggle.activateFor": [
+    "formatOnSave"
+  ],
+  "git.autofetch": true,
+  "guides.active.color.dark": "rgba(102, 217, 239, 0.60)",
+  "guides.active.color.light": "rgba(200, 100, 100, 0.60)",
+  "guides.active.enabled": true,
+  "guides.active.expandBrackets": true,
+  "guides.active.extraIndent": true,
+  "guides.active.gutter": false,
+  "guides.active.hideOnSelection": true,
+  "guides.active.style": "solid",
+  "guides.active.width": 1,
+  "guides.enabled": true,
+  "guides.indent.backgrounds": [],
+  "guides.indent.hideBackgroundOnSelection": true,
+  "guides.indent.showFirstIndentGuides": true,
+  "guides.limit.maximum": -1,
+  "guides.normal.color.dark": "rgba(120, 120, 120, 0.5)",
+  "guides.normal.color.light": "rgba(220, 220, 220, 0.75)",
+  "guides.normal.enabled": true,
+  "guides.normal.hideOnSelection": false,
+  "guides.normal.style": "dotted",
+  "guides.normal.width": 1,
+  "guides.overrideDefault": true,
+  "guides.sendUsagesAndStats": false,
+  "guides.stack.color.dark": "rgba(102, 217, 239, 0.1)",
+  "guides.stack.color.light": "rgba(180, 180, 180, 0.75)",
+  "guides.stack.enabled": true,
+  "guides.stack.hideOnSelection": true,
+  "guides.stack.style": "dotted",
+  "guides.stack.width": 1,
+  "guides.updateDelay": 0.1,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.styles": {
+    "closing": {
+      "name": {
+        "custom": {
+          "dark": {
+            "backgroundColor": "#00BCD4",
+            "color": "#000"
+          },
+          "light": {
+            "backgroundColor": "#00BCD4",
+            "color": "#fff"
+          }
+        }
+      }
+    },
+    "opening": {
+      "name": {
+        "custom": {
+          "dark": {
+            "backgroundColor": "#00BCD4",
+            "color": "#000"
+          },
+          "light": {
+            "backgroundColor": "#00BCD4",
+            "color": "#fff"
+          }
+        }
+      }
+    }
+  },
+  "html.autoClosingTags": true,
+  "html.format.contentUnformatted": "pre,code,textarea",
+  "html.format.extraLiners": "p",
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": false,
+  "html.format.maxPreserveNewLines": 2,
+  "html.format.preserveNewLines": true,
+  "html.format.unformatted": "wbr",
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.wrapLineLength": 200,
+  "html.suggest.html5": false,
+  "html.trace.server": "messages",
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  "htmlhint.documentSelector": [
+    "html",
+    "blade",
+    "blade.php",
+    "vue"
+  ],
+  "insertDateString.formatTime": "YYYY-MM-DD hh:mm:ss",
+  "jake.autoDetect": "off",
+  "javascript.format.enable": false,
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.trace.server": "verbose",
+  "markdown.extension.showExplorer": true,
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdown.preview.fontFamily": "'Ubuntu', 'Segoe UI', 'SFUIText-Light', 'HelveticaNeue-Light', sans-serif",
+  "markdown.preview.fontSize": 16,
+  "markdown.preview.lineHeight": 1.4,
+  "markdown.previewFrontMatter": "show",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#ff7043",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.showUpdateMessage": false,
+  "material-icon-theme.showWelcomeMessage": false,
+  "materialTheme.accent": "Cyan",
+  "mochaExplorer.logfile": "./logs",
+  "mochaExplorer.logpanel": true,
+  "mochaExplorer.require": "babel-register",
+  "node-module-intellisense.autoStripExtensions": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".d.ts",
+    ".tsx"
+  ],
+  "node-module-intellisense.modulePaths": [],
+  "node-module-intellisense.scanBuiltinModules": true,
+  "node-module-intellisense.scanDevDependencies": true,
+  "node-module-intellisense.scanFileModules": true,
+  "npm-intellisense.showBuildInLibs": false,
+  "npm.enableScriptExplorer": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "php-docblocker.qualifyClassNames": true,
+  "php-docblocker.returnGap": true,
+  "php-docblocker.useShortNames": true,
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "php.validate.executablePath": "/usr/bin/php",
+  "php.validate.run": "onType",
+  "phpcs.executablePath": "/home/jesse/.composer/vendor/bin/phpcs",
+  "prettier.arrowParens": "always",
+  "prettier.eslintIntegration": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.formatting.provider": "autopep8",
+  "python.jediEnabled": false,
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "**/site-packages/**/*.py"
+  ],
+  "python.linting.lintOnSave": true,
+  "python.linting.maxNumberOfProblems": 100,
+  "python.linting.mypyArgs": [
+    "--ignore-missing-imports",
+    "--follow-imports=silent"
+  ],
+  "python.linting.pydocstyleEnabled": true,
+  "scss.lint.argumentsInColorFunction": "error",
+  "scss.lint.compatibleVendorPrefixes": "ignore",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.float": "ignore",
+  "scss.lint.fontFaceProperties": "warning",
+  "scss.lint.hexColorLength": "error",
+  "scss.lint.ieHack": "ignore",
+  "scss.lint.importStatement": "ignore",
+  "search.exclude": {
+    "**/.pyc": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/vendor/**": true,
+    "*.min.css": true,
+    "*.min.js": true,
+    ".git/": true,
+    "bower_components": true,
+    "cache": true,
+    "node_modules": true,
+    "vendor": true
+  },
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "Envy Code R, 'Fira Code Retina', monospace, 'Droid Sans Fallback'",
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shell.osx": "/bin/bash",
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "tslint.nodePath": "/home/jesse/.yarn/bin/",
+  "typescript.locale": "en",
+  "typescript.preferences.quoteStyle": "single",
+  "window.title": "[ ${rootName} ] ${dirty}${activeEditorLong}${separator} ${separator} ",
+  "window.zoomLevel": 2,
+  "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#00BCD4",
+    "editor.hoverHighlightBackground": "#ff7717",
+    "editorSuggestWidget.highlightForeground": "#00BCD4",
+    "editorWhitespace.foreground": "#353f40",
+    "editorWidget.border": "#ff7717",
+    "editorWidget.resizeBorder": "#ff7717",
+    "list.activeSelectionBackground": "#595959",
+    "list.activeSelectionForeground": "#fff",
+    "list.focusForeground": "#fff",
+    "list.highlightForeground": "#ff7717",
+    "list.hoverBackground": "#595959",
+    "list.hoverForeground": "#fff",
+    "list.inactiveSelectionForeground": "#ff7717",
+    "notificationLink.foreground": "#ff7717",
+    "panel.border": "#696969",
+    "panelTitle.activeBorder": "#ff7717",
+    "panelTitle.activeForeground": "#fff",
+    "panelTitle.inactiveForeground": "#ccc",
+    "pickerGroup.foreground": "#222222",
+    "progressBar.background": "#ff7717",
+    "scrollbarSlider.activeBackground": "#ff7717",
+    "settings.headerForeground": "#ff7717",
+    "settings.modifiedItemIndicator": "#ff7717",
+    "statusBar.background": "#444",
+    "tab.activeBorder": "#ff7717",
+    "tab.hoverBorder": "#ff7817b0",
+    "textLink.foreground": "#ff7717"
+  },
+  "workbench.colorTheme": "Monokai",
+  "workbench.commandPalette.history": 80,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tips.enabled": false,
+  "yaml.format.enable": true,
+  "yaml.format.singleQuote": true,
+  "autoimport.showNotifications": true,
+  "autoimport.filesToScan": "**/*.{ts,tsx,js,vue}"
+}
