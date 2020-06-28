@@ -183,12 +183,15 @@
   },
   "files.defaultLanguage": "",
   "files.exclude": {
+    ".next/*": true,
     "**/.DS_Store": false,
     "**/.git": false,
     "**/.hg": false,
     "**/.pyc": false,
     "**/.svn": false,
-    "**/node_modules": true
+    "**/node_modules": true,
+    "build/*": true,
+    "out/*": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -419,5 +422,15 @@
   "yaml.format.enable": true,
   "yaml.format.singleQuote": true,
   "autoimport.showNotifications": true,
-  "autoimport.filesToScan": "**/*.{ts,tsx,js,vue}"
+  "autoimport.filesToScan": "**/*.{ts,tsx,js,vue}",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "pugbeautify.tabSize": 2,
+  "puglint.enable": true,
+  "explorer.confirmDelete": false,
+  "editor.renameOnType": true,
+  "python.languageServer": "Microsoft"
 }

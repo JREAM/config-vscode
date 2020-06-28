@@ -30,18 +30,6 @@
   // Cursor
   // --------------------------------------------------------------------
   {
-    // Duplicate Cursor: Down
-    "key": "shift+alt+down",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
-  {
-    // Duplicate Cursor: Up
-    "key": "shift+alt+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+shift+right",
     "command": "cursorWordEndRightSelect",
     "when": "editorTextFocus"
@@ -267,6 +255,14 @@
     "when": "textInputFocus"
   },
   {
+    "key": "ctrl+shift+4",
+    "command": "workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "ctrl+shift+3",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
     "key": "ctrl+shift+right",
     "command": "-workbench.action.terminal.resizePaneRight",
     "when": "terminalFocus"
@@ -469,7 +465,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+u ctrl+u",
+    "key": "ctrl+u ctrl+a",
     "command": "editor.unfoldAll"
   },
   {
@@ -729,10 +725,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+k alt+right",
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected"
-  },
-  {
     "key": "ctrl+shift+i ctrl+shift+p",
     "command": "lorem-ipsum.line"
   },
@@ -910,6 +902,49 @@
     "key": "tab",
     "command": "-editor.emmet.action.expandAbbreviation",
     "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+alt+u",
+    "command": "-extension.updateSettings"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-require_sort.sort",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.actions.view.problems"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "ctrl+shift+2",
+    "command": "workbench.action.output.toggleOutput"
   }
 ]
-
