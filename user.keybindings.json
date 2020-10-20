@@ -1,9 +1,42 @@
 [
-  // --------------------------------------------------------------------
-  // Lines
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
+  // Editor Views
+  // ________________________________________________________________
   {
-    // DELETE LINE
+    "key": "alt+1",
+    "command": "workbench.action.editorLayoutSingle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.editorLayoutTwoColumns",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.editorLayoutThreeColumns",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "workbench.action.editorLayoutTwoRows",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+3",
+    "command": "workbench.action.editorLayoutThreeRows",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+g",
+    "command": "workbench.action.editorLayoutTwoByTwoGrid",
+    "when": "editorTextFocus"
+  },
+  // ________________________________________________________________
+  // Lines
+  // ________________________________________________________________
+  {
+    // deleteLine
     "key": "ctrl+e",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
@@ -26,9 +59,9 @@
     "command": "editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   // Cursor
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   {
     "key": "alt+shift+right",
     "command": "cursorWordEndRightSelect",
@@ -59,9 +92,10 @@
     "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
-  // --------------------------------------------------------------------
-  // EASY START/END OF LINE LAPTOP (AND HIGLIGHTING) - HOME/END REMAIN SAME
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
+  // Editor Cursor Line Movemoent
+  // (Start/End + Highlights)
+  // ________________________________________________________________
   {
     // END
     "key": "alt+right",
@@ -86,6 +120,9 @@
     "command": "cursorHomeSelect",
     "when": "editorTextFocus"
   },
+  // ________________________________________________________________
+  // Editor Text Manipulation
+  // ________________________________________________________________
   {
     // Transform Uppercase
     "key": "ctrl+k ctrl+u",
@@ -93,15 +130,14 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    // Split Editor Vertical
-    "key": "ctrl+[",
-    "command": "workbench.action.splitEditor"
+    // <PLUGIN> Sort Lines
+    "key": "alt+s alt+s",
+    "command": "editor.action.sortLinesAscending",
+    "when": "editorFocus"
   },
-  {
-    // Split Editor Horizontal
-    "key": "ctrl+]",
-    "command": "workbench.action.splitEditorOrthogonal"
-  },
+  // ________________________________________________________________
+  // Find
+  // ________________________________________________________________
   {
     // Find Symbol
     "key": "ctrl+r",
@@ -130,11 +166,6 @@
     "when": "editorFocus && !editorReadonly"
   },
   {
-    // <PLUGIN> Sort Lines
-    "key": "alt+s",
-    "command": "editor.action.sortLinesAscending"
-  },
-  {
     "key": "ctrl+shift+z",
     "command": "-redo",
     "when": "textInputFocus && !editorReadonly"
@@ -143,16 +174,6 @@
     "key": "ctrl+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-settings.action.editFocusedSetting",
-    "when": "inSettingsSearch"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
   },
   {
     "key": "shift+escape",
@@ -169,21 +190,12 @@
     "command": "-editor.action.inPlaceReplace.down",
     "when": "editorTextFocus && !editorReadonly"
   },
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   // <Plugin> Quick Open Create
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   {
     "command": "quickOpenCreate.open",
     "key": "cmd+o"
-  },
-  {
-    "key": "ctrl+k ctrl+c",
-    "command": "camelCase"
-  },
-  {
-    "key": "ctrl+shift+\\",
-    "command": "-editor.action.jumpToBracket",
-    "when": "editorTextFocus"
   },
   {
     "key": "alt+right",
@@ -259,7 +271,7 @@
     "command": "workbench.debug.action.toggleRepl"
   },
   {
-    "key": "ctrl+shift+3",
+    "key": "alt+t",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
@@ -347,16 +359,12 @@
   },
   {
     "key": "alt+p",
-    "command": "editor.action.peekTypeDefinition"
-  },
-  {
-    "key": "alt+p",
     "command": "-keybindings.editor.toggleSortByPrecedence",
     "when": "inKeybindings"
   },
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   // <Plugin> Advanced New File
-  // --------------------------------------------------------------------
+  // ________________________________________________________________
   {
     "key": "ctrl+k ctrl+1",
     "command": "-editor.foldLevel1",
@@ -493,11 +501,6 @@
     "command": "-extension.preview"
   },
   {
-    "key": "alt+t",
-    "command": "extension.stringConvert",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+alt+t",
     "command": "-extension.stringConvert",
     "when": "editorTextFocus"
@@ -521,16 +524,6 @@
     "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
   },
   {
-    "key": "ctrl+k t",
-    "command": "-quokka.createTypeScriptFile",
-    "when": "!quokka.isLiveShareClient && !terminalFocus"
-  },
-  {
-    "key": "ctrl+k j",
-    "command": "-quokka.createJavaScriptFile",
-    "when": "!quokka.isLiveShareClient && !terminalFocus"
-  },
-  {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
   },
@@ -542,14 +535,6 @@
     "key": "ctrl+r",
     "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
     "when": "inQuickOpen && inRecentFilesPicker"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "-workbench.action.showAllSymbols"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "workbench.action.files.newUntitledFile"
   },
   {
     "key": "ctrl+n",
@@ -587,8 +572,9 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+k ctrl+shift+k",
-    "command": "workbench.files.action.collapseExplorerFolders"
+    "key": "ctrl+-",
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
     "key": "alt+d",
@@ -598,11 +584,6 @@
   {
     "key": "shift+alt+d",
     "command": "-extension.downloadSettings"
-  },
-  {
-    "key": "shift+alt+d",
-    "command": "divider.addFromCursorWithOneLine",
-    "when": "editorTextFocus"
   },
   {
     "key": "alt+s",
@@ -616,17 +597,7 @@
   },
   {
     "key": "alt+d",
-    "command": "todo.toggleDone",
-    "when": "editorTextFocus && editorLangId == 'todo'"
-  },
-  {
-    "key": "alt+d",
     "command": "-todo.toggleDone",
-    "when": "editorTextFocus && editorLangId == 'todo'"
-  },
-  {
-    "key": "alt+c",
-    "command": "todo.toggleCancelled",
     "when": "editorTextFocus && editorLangId == 'todo'"
   },
   {
@@ -637,21 +608,6 @@
   {
     "key": "ctrl+m",
     "command": "highlight-matching-tag.jumpToMatchingTag"
-  },
-  {
-    "key": "ctrl+k ctrl+g",
-    "command": "gitlens.toggleCodeLens",
-    "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+shift+g shift+b",
-    "command": "-gitlens.toggleCodeLens",
-    "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "shift+alt+b",
-    "command": "-gitlens.toggleCodeLens",
-    "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && config.gitlens.keymap == 'alternate'"
   },
   {
     "key": "ctrl+shift+g",
@@ -936,7 +892,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+1",
+    "key": "alt+p",
     "command": "workbench.actions.view.problems"
   },
   {
@@ -944,7 +900,83 @@
     "command": "eslint.executeAutofix"
   },
   {
-    "key": "ctrl+shift+2",
+    "key": "alt+o",
     "command": "workbench.action.output.toggleOutput"
+  },
+  {
+    "key": "alt+s alt+j",
+    "command": "sortJSON.sortJSON"
+  },
+  {
+    "key": "f2",
+    "command": "fileutils.renameFile",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "fileutils.duplicateFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "workbench.debug.action.focusRepl"
+  },
+  {
+    "key": "alt+d",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "ctrl+shift+k ctrl+shift+left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+shift+k ctrl+shift+w",
+    "command": "workbench.action.closeEditorsInOtherGroups"
+  },
+  {
+    "key": "alt+pageup",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+home",
+    "command": "-cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+pageup",
+    "command": "cursorTopSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+home",
+    "command": "-cursorTopSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+pagedown",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+end",
+    "command": "-cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+pagedown",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+end",
+    "command": "-cursorBottomSelect",
+    "when": "textInputFocus"
   }
 ]
